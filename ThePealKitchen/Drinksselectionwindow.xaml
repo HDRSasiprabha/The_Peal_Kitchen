@@ -1,0 +1,67 @@
+﻿<Window x:Class="ThePealKitchen.Drinksselectionwindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThePealKitchen"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+
+        mc:Ignorable="d" Height="600" Width="1080" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="299" Margin="10,4,0,0" VerticalAlignment="Top" Width="319">
+            <Image HorizontalAlignment="Left" Height="260" VerticalAlignment="Top" Width="244" Source="Drinks/coca cola png.png" Margin="39,11,0,0" Stretch="UniformToFill"/>
+            <Button Content="ADD TO CART" HorizontalAlignment="Left" Margin="190,259,0,0" VerticalAlignment="Top" Width="119" Click="btn_atcartcola"/>
+            <Button Content="-" HorizontalAlignment="Left" Margin="4,261,0,0" VerticalAlignment="Top" Width="45" Foreground="Black" BorderBrush="{x:Null}" Background="#FFA3A0A0" FontWeight="Bold" FontSize="20" Height="32" Click="Btn_minusco"/>
+            <Button Content="+" HorizontalAlignment="Left" Margin="140,261,0,0" VerticalAlignment="Top" Width="45" Foreground="Black" BorderBrush="{x:Null}" Background="#FFA3A0A0" FontWeight="Bold" FontSize="20" Height="32" Click="Btn_plusco"/>
+            <TextBox x:Name="txt_qtyco" HorizontalAlignment="Left" Height="32" Margin="53,257,0,0" TextWrapping="Wrap" Text="Count  " VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.5,0.5" CaretBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="Red" TextAlignment="Center" BorderBrush="#890028FF"></TextBox>
+            <Label Content="Coca Cola (150ml)" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.796,0.222" Width="272" Height="34" FontWeight="Bold" FontSize="20"/>
+            <Label Content="Rs. 200/=" HorizontalAlignment="Left" Margin="255,230,0,0" VerticalAlignment="Top" Width="63" FontWeight="Bold"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="299" Margin="361,4,0,0" VerticalAlignment="Top" Width="319">
+            <Image HorizontalAlignment="Left" Height="260" VerticalAlignment="Top" Width="244" Source="Drinks/Pepsi 150ml cup png.png" Margin="39,33,0,0"/>
+            <Button Content="ADD TO CART" HorizontalAlignment="Left" Margin="190,259,0,0" VerticalAlignment="Top" Width="119" Click="btn_atcartpep"/>
+            <Button Content="-" HorizontalAlignment="Left" Margin="4,261,0,0" VerticalAlignment="Top" Width="45" Foreground="Black" BorderBrush="{x:Null}" Background="#FFA3A0A0" FontWeight="Bold" FontSize="20" Height="32" Click="Btn_minusp"/>
+            <Button Content="+" HorizontalAlignment="Left" Margin="140,261,0,0" VerticalAlignment="Top" Width="45" Foreground="Black" BorderBrush="{x:Null}" Background="#FFA3A0A0" FontWeight="Bold" FontSize="20" Height="32" Click="Btn_plusp"/>
+            <TextBox x:Name="txt_qtypep" HorizontalAlignment="Left" Height="32" Margin="53,257,0,0" TextWrapping="Wrap" Text="Count  " VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.5,0.5" CaretBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="Red" TextAlignment="Center" BorderBrush="#890028FF"/>
+            <Label Content="Pepsi (150ml)" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.796,0.222" Width="272" Height="34" FontWeight="Bold" FontSize="20"/>
+            <Label Content="Rs. 200/=" HorizontalAlignment="Left" Margin="255,230,0,0" VerticalAlignment="Top" Width="63" FontWeight="Bold"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="299" Margin="721,4,0,0" VerticalAlignment="Top" Width="319">
+            <Image HorizontalAlignment="Left" Height="260" VerticalAlignment="Top" Width="244" Source="Drinks/mint mojito png.png" Margin="37,-1,0,0" Stretch="UniformToFill"/>
+            <Button Content="ADD TO CART" HorizontalAlignment="Left" Margin="190,259,0,0" VerticalAlignment="Top" Width="129" Click="btn_atcartmoji"/>
+            <Button Content="-" HorizontalAlignment="Left" Margin="4,261,0,0" VerticalAlignment="Top" Width="45" Foreground="Black" BorderBrush="{x:Null}" Background="#FFA3A0A0" FontWeight="Bold" FontSize="20" Height="32" Click="Btn_minusm"/>
+            <Button Content="+" HorizontalAlignment="Left" Margin="140,261,0,0" VerticalAlignment="Top" Width="45" Foreground="Black" BorderBrush="{x:Null}" Background="#FFA3A0A0" FontWeight="Bold" FontSize="20" Height="32" Click="Btn_plusm"/>
+            <TextBox x:Name="txt_qtymin" HorizontalAlignment="Left" Height="32" Margin="53,257,0,0" TextWrapping="Wrap" Text="Count  " VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.5,0.5" CaretBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="Red" TextAlignment="Center" BorderBrush="#890028FF"/>
+            <Label Content="Mint Mojito" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.796,0.222" Width="272" Height="34" FontWeight="Bold" FontSize="20"/>
+            <Label Content="Rs. 400/=" HorizontalAlignment="Left" Margin="255,230,0,0" VerticalAlignment="Top" Width="63" FontWeight="Bold"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="299" Margin="10,298,0,0" VerticalAlignment="Top" Width="319">
+            <Image HorizontalAlignment="Left" Height="218" VerticalAlignment="Top" Width="242" Source="Drinks/cappuccino-png.png" Margin="39,34,0,0" Stretch="Fill"/>
+            <Button Content="ADD TO CART" HorizontalAlignment="Left" Margin="190,259,0,0" VerticalAlignment="Top" Width="128" Click="btn_atcartcap"/>
+            <Button Content="-" HorizontalAlignment="Left" Margin="4,261,0,0" VerticalAlignment="Top" Width="45" Foreground="Black" BorderBrush="{x:Null}" Background="#FFA3A0A0" FontWeight="Bold" FontSize="20" Height="32" Click="Btn_minuscap"/>
+            <Button Content="+" HorizontalAlignment="Left" Margin="140,261,0,0" VerticalAlignment="Top" Width="45" Foreground="Black" BorderBrush="{x:Null}" Background="#FFA3A0A0" FontWeight="Bold" FontSize="20" Height="32" Click="Btn_pluscap"/>
+            <TextBox x:Name="txt_qtycap" HorizontalAlignment="Left" Height="32" Margin="53,257,0,0" TextWrapping="Wrap" Text="Count  " VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.5,0.5" CaretBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="Red" TextAlignment="Center" BorderBrush="#890028FF"/>
+            <Label Content="Cappuccino" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.796,0.222" Width="272" Height="34" FontWeight="Bold" FontSize="20"/>
+            <Label Content="Rs. 500/=" HorizontalAlignment="Left" Margin="255,230,0,0" VerticalAlignment="Top" Width="63" FontWeight="Bold"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="299" Margin="361,298,0,0" VerticalAlignment="Top" Width="319">
+            <Image HorizontalAlignment="Left" Height="260" VerticalAlignment="Top" Width="244" Source="Drinks/iced coffee png.png" Margin="39,11,0,0" Stretch="UniformToFill"/>
+            <Button Content="ADD TO CART" HorizontalAlignment="Left" Margin="190,259,0,0" VerticalAlignment="Top" Width="129" Click="btn_atcartice"/>
+            <Button Content="-" HorizontalAlignment="Left" Margin="4,261,0,0" VerticalAlignment="Top" Width="45" Foreground="Black" BorderBrush="{x:Null}" Background="#FFA3A0A0" FontWeight="Bold" FontSize="20" Height="32" Click="Btn_minusic"/>
+            <Button Content="+" HorizontalAlignment="Left" Margin="140,261,0,0" VerticalAlignment="Top" Width="45" Foreground="Black" BorderBrush="{x:Null}" Background="#FFA3A0A0" FontWeight="Bold" FontSize="20" Height="32" Click="Btn_plusic"/>
+            <TextBox x:Name="txt_qtyice" HorizontalAlignment="Left" Height="32" Margin="53,257,0,0" TextWrapping="Wrap" Text="Count  " VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.5,0.5" CaretBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="Red" TextAlignment="Center" BorderBrush="#890028FF"/>
+            <Label Content="Iced Coffee" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.796,0.222" Width="272" Height="34" FontWeight="Bold" FontSize="20"/>
+            <Label Content="Rs. 200/=" HorizontalAlignment="Left" Margin="234,230,0,0" VerticalAlignment="Top" Width="63" FontWeight="Bold"/>
+        </Grid>
+        <materialDesign:PackIcon Kind="ArrowLeftBoldCircle" HorizontalAlignment="Left" Margin="996,561,0,0" VerticalAlignment="Top" Height="39" Width="39"/>
+        <materialDesign:PackIcon Kind="Cart" HorizontalAlignment="Left" Margin="1040,561,0,0" VerticalAlignment="Top" Height="39" Width="39"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="1040,561,0,0" VerticalAlignment="Top" Width="40" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="39" Click="Btn_showcartdw"/>
+        <Button Content="" Margin="996,561,44,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="39" Click="Btn_drinkback"/>
+
+
+        <TextBox x:Name="txt_drinktot" HorizontalAlignment="Left" Height="31" Margin="910,498,0,0" TextWrapping="Wrap" Text="amount" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.5,0.5" CaretBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="Red" TextAlignment="Center" BorderBrush="#890028FF" />
+        <Label Content="Drink Total" HorizontalAlignment="Left" Margin="737,505,0,0" VerticalAlignment="Top" Width="97"/>
+
+
+    </Grid>
+</Window>

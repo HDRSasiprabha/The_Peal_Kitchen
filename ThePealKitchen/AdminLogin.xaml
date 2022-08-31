@@ -1,0 +1,42 @@
+﻿<Window x:Name="AdminLoginWindow" x:Class="ThePealKitchen.AdminLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThePealKitchen"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Height="500" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="Icons and images/profile_48px.png">
+    <Grid>
+        <Rectangle Height="280" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF008AFF"/>
+                    <GradientStop Color="#FF110848" Offset="1"/>
+                    <GradientStop Color="#FF33288B" Offset="0.546"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image HorizontalAlignment="Left" Height="110" Margin="105,126,0,0" VerticalAlignment="Top" Width="118" Source="Icons and images/health-wellness_health-centers_children_-1024x768.jpg" Stretch="UniformToFill"/>
+        <Grid Margin="2,280,-1,2.4">
+            <TextBox
+  x:Name="txt_username"
+  materialDesign:HintAssist.Hint="Enter Username"
+  materialDesign:HintAssist.Foreground="DarkRed"
+  materialDesign:TextFieldAssist.UnderlineBrush="DarkRed"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="18,10,34,128" FontFamily="MV Boli" />
+            <PasswordBox
+                x:Name="txt_pswrd"
+                materialDesign:HintAssist.Hint="Enter Password"
+                materialDesign:HintAssist.Foreground="DarkBlue"
+                materialDesign:TextFieldAssist.UnderlineBrush="DarkBlue"
+                Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="18,77,34,68" FontFamily="MV Boli" />
+            <Button x:Name="btn_login"
+  Style="{StaticResource MaterialDesignFloatingActionButton}"
+  materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
+  materialDesign:ButtonProgressAssist.Value="-1"
+  materialDesign:ButtonProgressAssist.IsIndeterminate="True"
+  Content="Log In" Margin="135,133,161,8" Height="Auto" Width="Auto" Background="#FF06375D" FontSize="11" FontFamily="SimSun" Click="Btn_Login_Click" />
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="42,20,0,0" TextWrapping="Wrap" Text="Welcome To The Admin Panel!" VerticalAlignment="Top" Height="79" Width="258" FontWeight="Bold" FontFamily="Source Sans Pro Black" FontSize="20" TextAlignment="Center" Foreground="#FFF0DEDE"/>
+    </Grid>
+</Window>

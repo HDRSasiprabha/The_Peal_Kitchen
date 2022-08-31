@@ -1,0 +1,36 @@
+﻿<Window x:Class="ThePealKitchen.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThePealKitchen"
+        mc:Ignorable="d" Height="600" Width="1080" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid RenderTransformOrigin="0.384,0.644">
+
+        <Button x:Name="btn_signin" Content="Sign Up!" HorizontalAlignment="Left" Margin="439,473,0,0" VerticalAlignment="Top" Width="193" Click="btn_signin_Click" Height="60" FontSize="20" BorderBrush="{x:Null}" Background="#FFA0220D"/>
+        <Button x:Name="btn_login" Content="Log In!" HorizontalAlignment="Left" Margin="439,196,0,0" VerticalAlignment="Top" Width="193" Click="btn_login_Click" Height="60" FontSize="20" BorderBrush="{x:Null}" Background="#FFA0220D"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,60,0,0" TextWrapping="Wrap" Text="Log In To Get 10% Off From Your Total Bill!" VerticalAlignment="Top" Height="108" Width="774" FontSize="36" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,310,0,0" TextWrapping="Wrap" Text="Don't Have Account? Sign Up Here &amp; Get Daily Exclusive Offers!" VerticalAlignment="Top" Height="108" Width="781" FontSize="36" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-360.069"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Image HorizontalAlignment="Left" Height="214" Margin="729,99,0,0" Width="267" RenderTransformOrigin="0.5,0.5" Source="Special Offer1.png" VerticalAlignment="Top">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.506"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.719"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="213" Margin="657,357,0,0" VerticalAlignment="Top" Width="238" Source="Sign up new.png"/>
+
+    </Grid>
+</Window>

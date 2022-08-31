@@ -1,0 +1,61 @@
+﻿<Window x:Class="ThePealKitchen.Pastamenuwindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThePealKitchen"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+
+        mc:Ignorable="d"
+        Title="Pastamenuwindow" Height="593" Width="1080" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide1" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+
+            <Grid HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="360" Background="White">
+                <TextBlock HorizontalAlignment="Left" Margin="224,42,0,0" TextWrapping="Wrap" Text="Chicken fried rice is the comfort dish of Chinese food. It's been around for a very long time and is also common in East, Southeast, and South Asian cuisines." VerticalAlignment="Top" Height="195" Width="125"/>
+                <Image HorizontalAlignment="Left" Height="221" VerticalAlignment="Top" Width="206" Source="Menu Images/food/rice/chicken fried rice.jpg" Margin="10,39,0,0" Stretch="UniformToFill"/>
+                <Button Content="ADD TO CART" HorizontalAlignment="Left" Margin="224,263,0,0" VerticalAlignment="Top" Width="133" Height="35" Click="btn_atcartsbcp"/>
+                <Button Content="-" HorizontalAlignment="Left" Margin="4,266,0,0" VerticalAlignment="Top" Width="45" Foreground="Black" BorderBrush="{x:Null}" Background="#FFA3A0A0" FontWeight="Bold" FontSize="20" Height="32" Click="btn_minusspbpasta"/>
+                <Button Content="+" HorizontalAlignment="Left" Margin="140,266,0,0" VerticalAlignment="Top" Width="45" Foreground="Black" BorderBrush="{x:Null}" Background="#FFA3A0A0" FontWeight="Bold" FontSize="20" Height="32" Click="btn_plusspbpasta"/>
+                <TextBox x:Name="txt_spcpasta" HorizontalAlignment="Left" Height="32" Margin="53,262,0,0" TextWrapping="Wrap" Text="Count  " VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.5,0.5" CaretBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="Red" TextAlignment="Center" BorderBrush="#890028FF"></TextBox>
+                <Label Content="Spaghetti Bolognaise " HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-0.796,0.222" Width="358" Height="34" FontSize="20" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="#FF060606"/>
+                <Label Content="Rs. 500/=" HorizontalAlignment="Left" Margin="283,233,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Height="37" FontSize="16"/>
+            </Grid>
+        </materialDesign:TransitioningContent>
+
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide2" OpeningEffect="{materialDesign:TransitionEffect FadeIn, Duration=0:0:0.8}">
+
+            <Grid HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="360" Margin="359,0,0,0" Background="White">
+                <TextBlock HorizontalAlignment="Left" Margin="224,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="195" Width="125" Text="Biryani is a mixed rice dish with its origins among the Muslims of Indian subcontinent. It can be compared to mixing a curry, later combining it with semi-cooked rice separately."/>
+                <Image HorizontalAlignment="Left" Height="221" VerticalAlignment="Top" Width="206" Source="Menu Images/food/rice/chicken fried rice.jpg" Margin="10,39,0,0" Stretch="UniformToFill"/>
+                <Button Content="ADD TO CART" HorizontalAlignment="Left" Margin="224,263,0,0" VerticalAlignment="Top" Width="133" Height="35" Click="btn_atcartmcp"/>
+                <Button Content="-" HorizontalAlignment="Left" Margin="12,266,0,0" VerticalAlignment="Top" Width="45" Foreground="Black" BorderBrush="{x:Null}" Background="#FFA3A0A0" FontWeight="Bold" FontSize="20" Height="32" Click="btn_minusmcpasta"/>
+                <Button Content="+" HorizontalAlignment="Left" Margin="148,266,0,0" VerticalAlignment="Top" Width="45" Foreground="Black" BorderBrush="{x:Null}" Background="#FFA3A0A0" FontWeight="Bold" FontSize="20" Height="32" Click="btn_plusmcpasta"/>
+                <TextBox x:Name="txt_mcpasta" HorizontalAlignment="Left" Height="32" Margin="61,262,0,0" TextWrapping="Wrap" Text="Count  " VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.5,0.5" CaretBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="Red" TextAlignment="Center" BorderBrush="#890028FF"></TextBox>
+                <Label Content="Macaroni &amp; Cheese Pasta" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.796,0.222" Width="339" Height="34" FontWeight="Bold" FontSize="20" HorizontalContentAlignment="Center" Foreground="#FF060606"/>
+                <Label Content="Rs. 580/=" HorizontalAlignment="Left" Margin="283,235,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Height="37" FontSize="16"/>
+            </Grid>
+        </materialDesign:TransitioningContent>
+
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide3" OpeningEffect="{materialDesign:TransitionEffect SlideInFromRight, Duration=0:0:0.8}">
+            <Grid HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="360" Margin="719,0,0,0" Background="White">
+                <TextBlock HorizontalAlignment="Left" Margin="224,42,0,0" TextWrapping="Wrap" Text="Nasi Goreng, literally meaning &quot;fried rice&quot; in both the Indonesian and Malay languages, is an Indonesian rice dish with pieces of meat and vegetables added." VerticalAlignment="Top" Height="195" Width="125"/>
+                <Image HorizontalAlignment="Left" Height="221" VerticalAlignment="Top" Width="206" Source="Menu Images/food/rice/chicken fried rice.jpg" Margin="10,39,0,0" Stretch="UniformToFill"/>
+                <Button Content="ADD TO CART" HorizontalAlignment="Left" Margin="224,261,0,0" VerticalAlignment="Top" Width="133" Height="35" Click="btn_atcartcl"/>
+                <Button Content="-" HorizontalAlignment="Left" Margin="12,264,0,0" VerticalAlignment="Top" Width="45" Foreground="Black" BorderBrush="{x:Null}" Background="#FFA3A0A0" FontWeight="Bold" FontSize="20" Height="32" Click="btn_minuscl"/>
+                <Button Content="+" HorizontalAlignment="Left" Margin="148,264,0,0" VerticalAlignment="Top" Width="45" Foreground="Black" BorderBrush="{x:Null}" Background="#FFA3A0A0" FontWeight="Bold" FontSize="20" Height="32" Click="btn_pluscl"/>
+                <TextBox x:Name="txt_cl" HorizontalAlignment="Left" Height="32" Margin="61,260,0,0" TextWrapping="Wrap" Text="Count  " VerticalAlignment="Top" Width="82" RenderTransformOrigin="0.5,0.5" CaretBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="Red" TextAlignment="Center" BorderBrush="#890028FF"/>
+                <Label Content="Chicken Lasagna" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-0.796,0.222" Width="349" Height="34" FontWeight="Bold" FontSize="20" HorizontalContentAlignment="Center" Foreground="#FF060606"/>
+                <Label Content="Rs. 650/=" HorizontalAlignment="Left" Margin="283,234,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Height="37" FontSize="16"/>
+            </Grid>
+        </materialDesign:TransitioningContent>
+        <materialDesign:PackIcon Kind="ArrowLeftBoldCircle" HorizontalAlignment="Left" Margin="996,549,0,0" VerticalAlignment="Top" Height="39" Width="39"/>
+        <materialDesign:PackIcon Kind="Cart" HorizontalAlignment="Left" Margin="1040,549,0,0" VerticalAlignment="Top" Height="39" Width="39"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="1040,551,0,0" VerticalAlignment="Top" Width="40" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="39" Click="Btn_addcartpasta"/>
+        <Button Content="" Margin="996,551,44,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="39" Click="Btn_pastaback"/>
+
+        <TextBox x:Name="txt_pastatot" HorizontalAlignment="Left" Height="31" Margin="910,498,0,0" TextWrapping="Wrap" Text="amount" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.5,0.5" CaretBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="Red" TextAlignment="Center" BorderBrush="#890028FF" />
+        <Label Content="Pasta Total" HorizontalAlignment="Left" Margin="773,505,0,0" VerticalAlignment="Top" Width="97"/>
+
+    </Grid>
+</Window>

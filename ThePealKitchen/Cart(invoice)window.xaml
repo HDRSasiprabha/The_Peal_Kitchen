@@ -1,0 +1,60 @@
+﻿<Window x:Class="ThePealKitchen.Cart_invoice_window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThePealKitchen"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Cart_invoice_window" Height="599" Width="1080" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid Margin="0,1,0,-0.8">
+            <ListView x:Name="billdata" ItemsSource="{Binding myBills}" Margin="0,0,26,213" FontSize="20"  >
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn DisplayMemberBinding="{Binding name}" Header="Item Name" Width="400"></GridViewColumn>
+                        <GridViewColumn DisplayMemberBinding="{Binding quantity}" Header="Quantity" Width="150"></GridViewColumn>
+                        <GridViewColumn DisplayMemberBinding="{Binding unitprice}" Header="Unit Price" Width="160"></GridViewColumn>
+                        <GridViewColumn DisplayMemberBinding="{Binding totpriceofitem}" Header="Total Item Price" Width="210"></GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Label Content="DISCOUNT" HorizontalAlignment="Left" Margin="10,453,0,0" VerticalAlignment="Top" Height="46" Width="133" FontWeight="Bold" FontSize="18"/>
+            <Label Content="TOTAL" HorizontalAlignment="Left" Margin="13,403,0,0" VerticalAlignment="Top" Width="133" Height="45" FontWeight="Bold" FontSize="18"/>
+            <TextBox x:Name="txt_discount" HorizontalAlignment="Left" Height="45" Margin="240,431,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162"/>
+            <TextBox x:Name="txt_total" HorizontalAlignment="Left" Height="45" Margin="240,386,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162" TextChanged="txt_total_TextChanged"/>
+            <Button Content="Proceed" HorizontalAlignment="Left" Margin="782,545,0,0" VerticalAlignment="Top" Width="141" Height="44" Click="Btn_proceed"/>
+            <TextBox x:Name="Txt_UserNAme" HorizontalAlignment="Left" Height="31" Margin="32,541,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="131" Visibility="Hidden"/>
+            <TextBox x:Name="Txt_Username" HorizontalAlignment="Left" Height="23" Margin="26,560,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+            <Label Content="Total with Discount" HorizontalAlignment="Left" Margin="10,494,0,0" VerticalAlignment="Top" Height="42" Width="204" FontSize="20" FontWeight="Bold"/>
+            <TextBox x:Name="txt_Finaltot" HorizontalAlignment="Left" Height="42" Margin="240,481,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" FontSize="20" FontWeight="Bold"/>
+            <Button x:Name="btn_Reset" Content="Check out" HorizontalAlignment="Left" Margin="595,550,0,0" VerticalAlignment="Top" Width="120" Click="btn_Reset_Click"/>
+        </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <materialDesign:PackIcon Kind="ArrowLeftBoldCircle" HorizontalAlignment="Left" Margin="996,561,0,0" VerticalAlignment="Top" Height="39" Width="39"/>
+        <Button Content="" Margin="996,561,44,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="39" Click="Btn_backin"/>
+
+
+
+    </Grid>
+</Window>

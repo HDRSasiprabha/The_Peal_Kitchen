@@ -1,0 +1,33 @@
+﻿<Window x:Class="ThePealKitchen.ManagerView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThePealKitchen"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Height="600" Width="1080" WindowStyle="None" Icon="Icons and images/manager_64px_1.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Width="1080" Height="600">
+        <Button x:Name="ManagerWindowClose" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="Btn_managerpoweroff" Margin="1039,5,11,565">
+            <materialDesign:PackIcon Kind="Power"/>
+        </Button>
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}" Margin="0,0,0,30" Height="600">
+            <Grid HorizontalAlignment="Left" Height="600" VerticalAlignment="Top" Width="1080">
+                <TextBlock HorizontalAlignment="Left" Margin="243,42,0,0" TextWrapping="Wrap" Text="Click Here To View The Details Of The Waiters In The Peak Kitchen." VerticalAlignment="Top" Height="87" Width="197"/>
+                <Image HorizontalAlignment="Left" Height="156" Margin="63,42,0,0" VerticalAlignment="Top" Width="158" Source="Manager View Images/waiter details.jpg" Stretch="UniformToFill"/>
+                <Button Content="View" HorizontalAlignment="Left" Margin="305,149,0,0" VerticalAlignment="Top" Width="75" Click="Btn_waiterdetails"/>
+                <TextBlock HorizontalAlignment="Left" Margin="803,42,0,0" TextWrapping="Wrap" Text="Click Here To View The Details Of The Customers In The Peak Kitchen." VerticalAlignment="Top" Height="87" Width="197"/>
+                <Image HorizontalAlignment="Left" Height="156" Margin="623,42,0,0" VerticalAlignment="Top" Width="158" Source="Manager View Images/Customer.jpg" Stretch="UniformToFill"/>
+                <Button Content="View" HorizontalAlignment="Left" Margin="865,149,0,0" VerticalAlignment="Top" Width="75" Click="Btn_Customerdetails"/>
+                <TextBlock HorizontalAlignment="Left" Margin="803,223,0,0" TextWrapping="Wrap" Text="Click Here To View The Details Of The Bills In The Peak Kitchen." VerticalAlignment="Top" Height="87" Width="197"/>
+                <Image HorizontalAlignment="Left" Height="156" Margin="623,223,0,0" VerticalAlignment="Top" Width="158" Source="Manager View Images/Invoice.jpg" Stretch="UniformToFill"/>
+                <Button Content="View" HorizontalAlignment="Left" Margin="865,330,0,0" VerticalAlignment="Top" Width="75" Click="Btn_invoicedetails"/>
+                <TextBlock HorizontalAlignment="Left" Margin="242,222,0,0" TextWrapping="Wrap" Text="Click Here To View The Details Of The Orders In The Peak Kitchen." VerticalAlignment="Top" Height="87" Width="197"/>
+                <Image HorizontalAlignment="Left" Height="156" Margin="62,222,0,0" VerticalAlignment="Top" Width="158" Source="Manager View Images/order.jpeg" Stretch="UniformToFill"/>
+                <Button Content="View" HorizontalAlignment="Left" Margin="304,347,0,0" VerticalAlignment="Top" Width="75" Click="Btn_orderdetails"/>
+                <TextBlock HorizontalAlignment="Left" Margin="242,421,0,0" TextWrapping="Wrap" Text="Click Here To View The Details Of The Items In The Peak Kitchen." VerticalAlignment="Top" Height="87" Width="197"/>
+                <Image HorizontalAlignment="Left" Height="156" Margin="62,423,0,0" VerticalAlignment="Top" Width="158" Source="Manager View Images/food item.jpg"/>
+                <Button Content="View" HorizontalAlignment="Left" Margin="304,530,0,0" VerticalAlignment="Top" Width="75" Click="Btn_itemdetails"/>
+            </Grid>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="ThePealKitchen.UserControlSignin"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ThePealKitchen"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            mc:Ignorable="d" 
+             d:DesignHeight="558.8" d:DesignWidth="1080.8">
+    <Grid>
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+            <Grid>
+                <Button Content="log in" HorizontalAlignment="Left" Margin="323,440,0,0" VerticalAlignment="Top" Width="150" Height="65" Click="keyboard_login_Click" Background="#FFA0220D" BorderBrush="{x:Null}" FontSize="20" />
+                <Label Content="E-Mail" HorizontalAlignment="Left" Margin="490,91,0,0" VerticalAlignment="Top" Height="50" Width="175" FontSize="38" FontWeight="Bold" FontFamily="Yu Gothic UI" HorizontalContentAlignment="Center"/>
+                <Label Content="Password" HorizontalAlignment="Left" Margin="490,260,0,0" VerticalAlignment="Top" Height="50" Width="175" FontSize="38" FontWeight="Bold" FontFamily="Yu Gothic UI" HorizontalContentAlignment="Center"/>
+                <PasswordBox x:Name="TxtPassword" HorizontalAlignment="Left" Margin="162,339,0,0" VerticalAlignment="Top" Width="797" Height="58" BorderBrush="#89FF0000" Background="LightGray"/>
+                <Button x:Name="btn_QR" Content="QR Login" HorizontalAlignment="Left" Margin="680,440,0,0" VerticalAlignment="Top" Width="138" Click="btn_QR_Click" Height="65" Background="#FFA0220D" BorderBrush="{x:Null}" FontSize="20"/>
+                <TextBox x:Name="Txtemail" HorizontalAlignment="Left" Height="58" Margin="162,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="797" BorderBrush="#89FF0000" Background="LightGray"/>
+
+            </Grid>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</UserControl>

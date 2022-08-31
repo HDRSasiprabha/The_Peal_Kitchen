@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9B957465-CF90-489C-B524-58D6235FCCFD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ThePealKitchen</RootNamespace>
+    <AssemblyName>ThePealKitchen</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=2.0.0.2054, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.2.0.0-ci2054\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=4.0.0.2054, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.4.0.0-ci2054\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="QRCoder, Version=1.3.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.3.9\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="zxing, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net47\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AdminLogin.xaml.cs">
+      <DependentUpon>AdminLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BillData.cs" />
+    <Compile Include="Cart%28invoice%29window.xaml.cs">
+      <DependentUpon>Cart%28invoice%29window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectDB.cs" />
+    <Compile Include="Customerdetailspage.xaml.cs">
+      <DependentUpon>Customerdetailspage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dessertselectionwindow.xaml.cs">
+      <DependentUpon>Dessertselectionwindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Drinksselectionwindow.xaml.cs">
+      <DependentUpon>Drinksselectionwindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Foodselectionwindow.xaml.cs">
+      <DependentUpon>Foodselectionwindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicedetailspage.xaml.cs">
+      <DependentUpon>Invoicedetailspage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="itemdetailspage.xaml.cs">
+      <DependentUpon>itemdetailspage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Item_class.cs" />
+    <Compile Include="Kottumenuwindow.xaml.cs">
+      <DependentUpon>Kottumenuwindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager View Images\DatabaseConnection.cs" />
+    <Compile Include="ManagerView.xaml.cs">
+      <DependentUpon>ManagerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Noodlesmenuwindow.xaml.cs">
+      <DependentUpon>Noodlesmenuwindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Orderdetailspage.xaml.cs">
+      <DependentUpon>Orderdetailspage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pastamenuwindow.xaml.cs">
+      <DependentUpon>Pastamenuwindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="QR.xaml.cs">
+      <DependentUpon>QR.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="QRgeni.xaml.cs">
+      <DependentUpon>QRgeni.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ricemenuwindow.xaml.cs">
+      <DependentUpon>Ricemenuwindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="UserControlHome.xaml.cs">
+      <DependentUpon>UserControlHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlJoin.xaml.cs">
+      <DependentUpon>UserControlJoin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMenu.xaml.cs">
+      <DependentUpon>UserControlMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlOffers.xaml.cs">
+      <DependentUpon>UserControlOffers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlSignin.xaml.cs">
+      <DependentUpon>UserControlSignin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="waiterdetailspage.xaml.cs">
+      <DependentUpon>waiterdetailspage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AdminLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cart%28invoice%29window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Customerdetailspage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dessertselectionwindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Drinksselectionwindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Foodselectionwindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Invoicedetailspage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="itemdetailspage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kottumenuwindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="ManagerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Noodlesmenuwindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Orderdetailspage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pastamenuwindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="QR.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="QRgeni.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ricemenuwindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlHome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlJoin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlOffers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlSignin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="waiterdetailspage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons and images\Chef.png" />
+    <Resource Include="Icons and images\chicken biriyani.jpg" />
+    <Resource Include="Icons and images\chicken kottu.jpg" />
+    <Resource Include="Icons and images\fat-cartoon-man-feasting-on-junk-food-eating-food-png-unhealthy-person-png-1306_918.png" />
+    <Resource Include="Icons and images\food_64px.png" />
+    <Resource Include="Icons and images\health-wellness_health-centers_children_-1024x768.jpg" />
+    <Resource Include="Icons and images\home_64px.png" />
+    <Resource Include="Icons and images\log in cover.png" />
+    <Resource Include="Icons and images\login_64px.png" />
+    <Resource Include="Icons and images\loyalty_card_40px.png" />
+    <Resource Include="Icons and images\photo-of-pepsi-take-away-cup-with-ice-cubes-isolated-on-white-back.jpg" />
+    <Resource Include="Icons and images\profile_48px.png" />
+    <Resource Include="Icons and images\sea food spicy noodless.jpg" />
+    <Resource Include="Icons and images\user_account_30px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons and images\manager_64px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Manager View Images\Customer.jpg" />
+    <Resource Include="Manager View Images\food item.jpg" />
+    <Resource Include="Manager View Images\Invoice.jpg" />
+    <Resource Include="Manager View Images\Order.jpeg" />
+    <Resource Include="Manager View Images\waiter details.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Manager View Images\back_to_50px.png" />
+    <Resource Include="Manager View Images\power_off_button_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sub menu images\kottu for sub menu.jpg" />
+    <Resource Include="sub menu images\noodles for sub menu.jpg" />
+    <Resource Include="sub menu images\pasta for sub menu.jpg" />
+    <Resource Include="sub menu images\rice for sub menu.jpg" />
+    <Resource Include="Menu Images\dessert\caramel pudding.jpg" />
+    <Resource Include="Menu Images\dessert\fruit salad with ice cream.jpg" />
+    <Resource Include="Menu Images\dessert\ice ceam\chocolate ice cream.jpg" />
+    <Resource Include="Menu Images\dessert\ice ceam\vanilla ice cream.jpg" />
+    <Resource Include="Menu Images\dessert\watalappan.jpg" />
+    <Resource Include="Menu Images\drinks\coffee.jpg" />
+    <Resource Include="Menu Images\drinks\milkshakes\chocolate milkshake.jpg" />
+    <Resource Include="Menu Images\drinks\milkshakes\stawberry milkshake.jpg" />
+    <Resource Include="Menu Images\drinks\milkshakes\vanilla milkshake.jpg" />
+    <Resource Include="Menu Images\drinks\soft drinks\cocacola.jpg" />
+    <Resource Include="Menu Images\drinks\soft drinks\fanta.jpg" />
+    <Resource Include="Menu Images\drinks\soft drinks\sprite.jpg" />
+    <Resource Include="Menu Images\drinks\tea.jpg" />
+    <Resource Include="Menu Images\food\appetizers\bbq chicken wings.jpg" />
+    <Resource Include="Menu Images\food\appetizers\fried chicken dumplings.jpg" />
+    <Resource Include="Menu Images\food\appetizers\steamed chicken dumplings.jpg" />
+    <Resource Include="Menu Images\food\appetizers\veggie spring rolls.jpg" />
+    <Resource Include="Menu Images\food\kottu\cheese kottu.jpg" />
+    <Resource Include="Menu Images\food\kottu\chicken and cheese kottu.jpg" />
+    <Resource Include="Menu Images\food\kottu\chicken kottu.jpg" />
+    <Resource Include="Menu Images\food\kottu\mixed kottu.jpg" />
+    <Resource Include="Menu Images\food\kottu\veggie kottu.jpg" />
+    <Resource Include="Menu Images\food\noodless\buttered noodless.jpg" />
+    <Resource Include="Menu Images\food\noodless\chicken spicy noodless.jpg" />
+    <Resource Include="Menu Images\food\noodless\sea food spicy noodless.jpg" />
+    <Resource Include="Menu Images\food\noodless\veggie spicy noodless.jpg" />
+    <Resource Include="Menu Images\food\pasta\chicken lasagna.jpg" />
+    <Resource Include="Menu Images\food\pasta\shrimp and bacon pasta.jpg" />
+    <Resource Include="Menu Images\food\pasta\spaghetti with meatballs.jpg" />
+    <Resource Include="Menu Images\food\pasta\vegetables and cheese pasta.jpg" />
+    <Resource Include="Menu Images\food\rice\chicken biriyani.jpg" />
+    <Resource Include="Menu Images\food\rice\chicken fried rice.jpg" />
+    <Resource Include="Menu Images\food\rice\thai fried rice.png" />
+    <Resource Include="Menu Images\food\rice\vegetable fried rice.jpg" />
+    <Resource Include="Menu Images\food\rice\veggie biriyani.JPG" />
+    <Resource Include="Menu Images\food\soup\creamy chicken mushroom soup.jpg" />
+    <Resource Include="Menu Images\food\soup\thai soup.png" />
+    <Resource Include="Menu Images\food\soup\vegetable soup.jpg" />
+    <Resource Include="Menu Images\desserts.jpg" />
+    <Resource Include="Menu Images\drinks.jpg" />
+    <Resource Include="Menu Images\food menu.jpg" />
+    <Resource Include="Drinks\cappuccino-png.png" />
+    <Resource Include="Drinks\coca cola png.png" />
+    <Resource Include="Drinks\iced coffee png.png" />
+    <Resource Include="Drinks\mint mojito png.png" />
+    <Resource Include="Drinks\Pepsi 150ml cup png.png" />
+    <Resource Include="Logo white.png" />
+    <Resource Include="Special offer.png" />
+    <Resource Include="login_64px.png" />
+    <Resource Include="Special Offer1.png" />
+    <Resource Include="Sign up new.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MaterialDesignThemes.4.0.0-ci2054\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.0.0-ci2054\build\MaterialDesignThemes.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MaterialDesignThemes.4.0.0-ci2054\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MaterialDesignThemes.4.0.0-ci2054\build\MaterialDesignThemes.targets'))" />
+  </Target>
+</Project>
